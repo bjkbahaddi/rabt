@@ -1,0 +1,19 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // رسالة ترحيبية بسيطة
+    console.log('%cمرحبا بك في منصة ربط - ربط الجمعيات بالداعمين', 'color: #2c7a3f; font-size: 16px; font-weight: bold;');
+
+    // تفعيل أدوات Bootstrap
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+    // نموذج تبرع سريع (مثال)
+    const donateBtns = document.querySelectorAll('.donate-quick');
+    donateBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const amount = prompt('أدخل مبلغ التبرع (درهم):', '100');
+            if (amount && !isNaN(amount)) {
+                alert(`شكراً لك! تم تسجيل تبرعك بقيمة ${amount} درهم. سيتم توجيهك لصفحة الدفع.`);
+            }
+        });
+    });
+});
