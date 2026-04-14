@@ -1,0 +1,78 @@
+:root {
+    --primary: #2c7a3f;
+    --secondary: #1e3a2f;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+
+.navbar {
+    background: rgba(44, 122, 63, 0.97);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border: none;
+    padding: 12px 32px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #1e5a2f;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(44,122,63,0.3);
+}
+
+.card {
+    transition: all 0.4s ease;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    width: 70px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.form-control {
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.progress-bar {
+    background: var(--primary);
+}
