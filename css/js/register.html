@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب - ربط</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4 text-success">إنشاء حساب جديد</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button onclick="alert('سيتم توجيهك لتسجيل جمعية')" class="btn btn-outline-success w-100 py-4 mb-3">
+                                    <i class="fas fa-building fa-2x d-block mb-2"></i>
+                                    <strong>أنا جمعية خيرية</strong>
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button onclick="alert('سيتم توجيهك لتسجيل داعم')" class="btn btn-outline-primary w-100 py-4 mb-3">
+                                    <i class="fas fa-hand-holding-heart fa-2x d-block mb-2"></i>
+                                    <strong>أنا داعم / متطوع</strong>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- نموذج تسجيل عام (يمكن توسيعه) -->
+                        <form class="mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="الاسم الكامل" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="البريد الإلكتروني" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="tel" class="form-control" placeholder="رقم الهاتف (+212)">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100 py-3">إنشاء الحساب</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+  </html>
