@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ربط | ربط الجمعيات بالداعمين</title>
+    <meta name="description" content="منصة إلكترونية تربط الجمعيات الخيرية بالداعمين والمتطوعين لتحقيق أثر أكبر">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #2c7a3f;
+            --secondary: #1e3a2f;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+        }
+        
+        .navbar {
+            background-color: rgba(44, 122, 63, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background-color: #1e5a2f;
+            transform: translateY(-3px);
+        }
+        
+        .card {
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">ربط</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#associations">الجمعيات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#supporters">الداعمون</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how">كيف يعمل؟</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+                </ul>
+                <div class="d-flex gap-2 ms-3">
+                    <button class="btn btn-outline-light">تسجيل الدخول</button>
+                    <button class="btn btn-light text-success fw-bold">إنشاء حساب</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <h1 class="display-3 fw-bold mb-4">نربط الخير بالداعمين</h1>
+                    <p class="lead fs-4 mb-5">منصة إلكترونية تجمع بين الجمعيات الخيرية والداعمين والمتطوعين لتحقيق أثر إيجابي أكبر في المجتمع</p>
+                    
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#" class="btn btn-primary btn-lg px-5 py-3">أنا جمعية خيرية</a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-5 py-3">أنا داعم / متطوع</a>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <small class="text-white-50">أكثر من ٢٨٠ جمعية وأكثر من ١٢ ألف داعم مسجلين</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <h2 class="fw-bold text-success">٢٨٥</h2>
+                    <p class="text-muted">جمعية خيرية</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <h2 class="fw-bold text-success">١٢٬٤٥٠</h2>
+                    <p class="text-muted">داعم ومتطوع</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <h2 class="fw-bold text-success">٣٢٨</h2>
+                    <p class="text-muted">مشروع مكتمل</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <h2 class="fw-bold text-success">٤.٨ مليون</h2>
+                    <p class="text-muted">درهم تم جمعها</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- جمعيات مميزة -->
+    <section id="associations" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 fs-1 fw-bold">جمعيات مميزة</h2>
+            <div class="row g-4">
+                <!-- يمكنك إضافة المزيد من البطاقات -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1582213782179-9d8b5d6c3e6e?ixlib=rb-4.0.3" class="card-img-top" alt="جمعية">
+                        <div class="card-body">
+                            <h5 class="card-title">جمعية أيادي الخير</h5>
+                            <p class="card-text">نساعد الأطفال اليتامى والأسر المحتاجة في المغرب.</p>
+                            <button class="btn btn-outline-success w-100">دعم الجمعية</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- كرر البطاقة لجمعيات أخرى -->
+            </div>
+        </div>
+    </section>
+
+    <!-- لماذا ربط؟ -->
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fs-1 fw-bold">لماذا تختار منصة ربط؟</h2>
+            <div class="row g-5 text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-handshake fa-3x mb-3"></i>
+                    <h4>شفافية كاملة</h4>
+                    <p>تتبع تبرعاتك ومشاريعك لحظة بلحظة</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-users fa-3x mb-3"></i>
+                    <h4>تواصل مباشر</h4>
+                    <p>تواصل مباشر بين الجمعيات والداعمين</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-chart-line fa-3x mb-3"></i>
+                    <h4>تأثير قابل للقياس</h4>
+                    <p>تقارير وإحصائيات واضحة عن كل مشروع</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="fw-bold">ربط</h4>
+                    <p>منصة مغربية تربط بين الجمعيات الخيرية والداعمين لخدمة المجتمع بكفاءة أعلى.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">عن ربط</a></li>
+                        <li><a href="#" class="text-white-50">الجمعيات</a></li>
+                        <li><a href="#" class="text-white-50">الداعمون</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>تواصل معنا</h5>
+                    <p>البريد: contact@rabt.ma</p>
+                    <p>الهاتف: +212 6XX XXX XXX</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center text-white-50">
+                © 2026 ربط - جميع الحقوق محفوظة
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
